@@ -3,7 +3,7 @@ body{
     font-family: 'open sans', sans-serif;
     background-color: #8a71c9;
     color: #ffffff;
-    margin: 0px;    
+    margin: 0px 0px 30px 0px;
 }
 
 h1{
@@ -34,8 +34,13 @@ h3{
 }
 
 section{
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;   
+}
+
+
+section section{
+    width: 100%;
 }
 
 p{
@@ -45,7 +50,6 @@ p{
 
 img{
     width: 100%;
-    border:  #ffffff 3px solid;
 }
 
 ul{
@@ -60,14 +64,59 @@ a{
     font-weight: 700;
 }
 
-footer{
-    background-color: #2a0074;
-    font-size: 5px;
-    padding-bottom: 2px;
-    display: grid;
-    align-items: center;
-}
-
 .paragraph-rodape{
     font-family: 'Courier New', Courier, monospace;
+}
+
+#link-topo{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #2a0074;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px #ffffff;
+    z-index:1;
+}
+
+.menu-principal a{
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: larger;
+}
+
+.menu-principal{
+    background-color: plum;
+    height: 40px;
+    max-width: 60%;
+    margin:  0 auto;
+}
+
+.menu-principal li{
+    display: inline-block;
+    line-height: 2;
+    margin: 0 89px;
+}
+
+button{
+    background-color: plum;
+    border: solid transparent 1px;
+    padding: 2px 20px;
+    border-radius: 3px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a0074;
+    height: 2vh;
+    position: absolute;
+    width: 100%;
+}
+
+form{
+    margin: 10px;
 }
